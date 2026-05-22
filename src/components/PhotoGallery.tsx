@@ -60,7 +60,7 @@ const PHOTOS: GalleryPhoto[] = [
   {
     id: 'photo-9',
     imageUrl: '/src/assets/images/9.jpg'
-  }
+  },
   {
     id: 'photo-10',
     imageUrl: '/src/assets/images/10.jpg'
