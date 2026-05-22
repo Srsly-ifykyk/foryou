@@ -27,7 +27,6 @@ export default function App() {
   const [loveTicker, setLoveTicker] = useState({ years: 0, days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [activeTheme, setActiveTheme] = useState(THEMES[0]);
   const [isBirthdayArrived, setIsBirthdayArrived] = useState(false);
-  const [bypassCountdown, setBypassCountdown] = useState(false);
 
   // Birthday Countdown Expiry Logic
   useEffect(() => {
@@ -132,7 +131,7 @@ export default function App() {
   return (
     <div id="amore-root" className={`min-h-screen ${activeTheme.bg} transition-all duration-1000 select-none pb-24 ${activeTheme.id === 'editorial' ? 'border-[12px] md:border-[16px] border-white' : ''}`}>
       <AnimatePresence mode="wait">
-        {!(isBirthdayArrived || bypassCountdown) ? (
+        {!isBirthdayArrived ? (
           /* Beautiful Countdown Landing Screen */
           <motion.div
             key="countdown-landing"
@@ -167,17 +166,6 @@ export default function App() {
                 textSecondary="text-stone-600"
                 accent="bg-[#5A5A40]"
               />
-            </div>
-
-            {/* Tiny dev testing toggle */}
-            <div className="absolute bottom-6 left-0 right-0 text-center z-10">
-              <button
-                onClick={() => setBypassCountdown(true)}
-                className="text-[9px] font-mono uppercase tracking-[0.25em] text-stone-400 hover:text-stone-700 transition-colors focus:outline-none"
-                title="Quick option to preview and inspect the completed website right now"
-              >
-                [ Skip Countdown for Testing 🌸 ]
-              </button>
             </div>
           </motion.div>
         ) : (
