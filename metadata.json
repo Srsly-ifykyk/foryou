@@ -1,0 +1,6 @@
+{
+  "name": "Amore",
+  "description": "A beautifully bespoke, high-fidelity digital love letter, memory gallery, and interactive birthday celebration crafted especially for you.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
