@@ -65,7 +65,7 @@ export default function BirthdayCountdown({
       const m = Math.floor((diff / 1000 / 60) % 60);
       const s = Math.floor((diff / 1000) % 60);
 
-      setTimeLeft({ days: d, hours: h, minutes: m, seconds: s, isBirthday: false });
+      setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 2, isBirthday: false });
     };
 
     updateCountdown();
