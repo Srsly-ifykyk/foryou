@@ -21,45 +21,79 @@ const PHOTOS: GalleryPhoto[] = [
   // Sun-kissed Escapes
   {
     id: 'photo-1',
-    imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/1.jpg'
   },
   {
     id: 'photo-2',
-    imageUrl: 'https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/2.jpg'
   },
   {
     id: 'photo-3',
-    imageUrl: 'https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/3.jpg'
   },
 
   // Café Conversations
   {
     id: 'photo-4',
-    imageUrl: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/4.jpg'
   },
   {
     id: 'photo-5',
-    imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/5.jpg'
   },
 
   // Stardust Nights
   {
     id: 'photo-6',
-    imageUrl: 'https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/6.jpg'
   },
   {
     id: 'photo-7',
-    imageUrl: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/7.jpg'
   },
 
   // Cozy Winter Memories
   {
     id: 'photo-8',
-    imageUrl: 'https://images.unsplash.com/photo-1481988535861-271139e0646c?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/8.jpg'
   },
   {
     id: 'photo-9',
-   imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/src/assets/images/9.jpg'
+  }
+  {
+    id: 'photo-10',
+    imageUrl: '/src/assets/images/10.jpg'
+  },
+
+  // Café Conversations
+  {
+    id: 'photo-11',
+    imageUrl: '/src/assets/images/11.jpg'
+  },
+  {
+    id: 'photo-12',
+    imageUrl: '/src/assets/images/12.jpg'
+  },
+
+  // Stardust Nights
+  {
+    id: 'photo-13',
+    imageUrl: '/src/assets/images/13.jpg'
+  },
+  {
+    id: 'photo-14',
+    imageUrl: '/src/assets/images/14.jpg'
+  },
+
+  // Cozy Winter Memories
+  {
+    id: 'photo-15',
+    imageUrl: '/src/assets/images/15.jpg'
+  },
+  {
+    id: 'photo-16',
+   imageUrl: '/src/assets/images/16.jpg'
   }
 ];
 
