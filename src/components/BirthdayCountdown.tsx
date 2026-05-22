@@ -44,7 +44,7 @@ export default function BirthdayCountdown({
   };
 
   const [targetDate, setTargetDate] = useState(getNextBirthday());
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, isBirthday: false });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, isBirthday: true });
   const [age, setAge] = useState(calculateAge());
 
   useEffect(() => {
@@ -65,7 +65,7 @@ export default function BirthdayCountdown({
       const m = Math.floor((diff / 1000 / 60) % 60);
       const s = Math.floor((diff / 1000) % 60);
 
-      setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 3, isBirthday: false });
+      setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 3, isBirthday: true });
     };
 
     updateCountdown();
