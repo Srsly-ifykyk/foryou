@@ -104,8 +104,8 @@ export const THEMES = [
 export const DEFAULT_CONFIG: BirthdayGiftConfig = {
   recipientName: "Kanna",
   senderName: "Your Favorite Person",
-  anniversaryDate: "2023-11-19",
-  birthDate: "2007-05-23",
+  anniversaryDate: "2023-09-04",
+  birthDate: "2007-05-22",
   colorTheme: "editorial",
   reasons: [
     "The cute tiny scrunch your nose makes when you smile or laugh.",
