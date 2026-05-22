@@ -21,90 +21,45 @@ const PHOTOS: GalleryPhoto[] = [
   // Sun-kissed Escapes
   {
     id: 'photo-1',
-    category: 'travel',
-    title: 'The Seaside Glimmer',
-    date: 'August 12, 2024',
-    location: 'Okinawa Beaches, Japan',
-    description: 'Running along the seashore under the blazing golden afternoon sun. You was laughing as the waves splashed your summer dress, looking absolute beautiful.',
     imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'photo-2',
-    category: 'travel',
-    title: 'Peak of the Hill Sunset',
-    date: 'September 5, 2024',
-    location: 'Mount Fuji Vista Point',
-    description: 'We climbed for three hours just to watch the clouds blush pink. You rested your head on my shoulder, wrapping your hands in mine to keep warm.',
     imageUrl: 'https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'photo-3',
-    category: 'travel',
-    title: 'Cherry Blossom Forest Walk',
-    date: 'April 18, 2025',
-    location: 'Shinjuku Gyoen National Garden',
-    description: 'Pink flower petals fell like sweet snowflakes into your hair. You held my hand tightly and made me promise we would come back every single spring.',
     imageUrl: 'https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&q=80&w=800'
   },
 
   // Café Conversations
   {
     id: 'photo-4',
-    category: 'cafe',
-    title: 'Mornings of Cappuccino & Poetry',
-    date: 'November 15, 2024',
-    location: 'Cozy Bookmark Café',
-    description: 'You drew a silly little heart in my coffee foam and challenged me to write a poem on a paper napkin. This napkin sits framed in my bedroom.',
     imageUrl: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'photo-5',
-    category: 'cafe',
-    title: 'The Raindrop Stare',
-    date: 'June 22, 2025',
-    location: 'Le Lapin Rainy Café Lounge',
-    description: 'Rainwater dripping softly down the glass. You were nestled inside a massive oversized sweater, talking about your childhood dreams with sparkling eyes.',
     imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800'
   },
 
   // Stardust Nights
   {
     id: 'photo-6',
-    category: 'stardust',
-    title: 'Our First Candlelit Table',
-    date: 'November 20, 2023',
-    location: 'The Velvet Corner Bistro',
-    description: 'Celebrating our very first anniversary here. You wore a gorgeous gold necklace and smiled so brightly that the restaurant candles looked dim.',
     imageUrl: 'https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'photo-7',
-    category: 'stardust',
-    title: 'Sparklers in the Midnight Garden',
-    date: 'January 1, 2025',
-    location: 'City View Overlook Park',
-    description: 'Lighting cold sparklers at midnight under a canopy of bursting silver fireworks. The fire sparkled in your cheeks as we whispered "I love you".',
     imageUrl: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=800'
   },
 
   // Cozy Winter Memories
   {
     id: 'photo-8',
-    category: 'cozy',
-    title: 'The Giant Shared Scarf',
-    date: 'December 24, 2024',
-    location: 'Sapporo Snow Festival Park',
-    description: 'It was minus four degrees out, so we literally wrapped ourselves together inside a single triple-knit red wool scarf. Cozy and unstoppable!',
     imageUrl: 'https://images.unsplash.com/photo-1481988535861-271139e0646c?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'photo-9',
-    category: 'cozy',
-    title: 'Warm Hearth & Hot Chocolate',
-    date: 'January 18, 2025',
-    location: 'The Alpine Wood Lodge',
-    description: 'Roasting soft marshmallows over the fireplace. We didn’t turn on a single light, just let the orange fire cast shadows and play music.',
-    imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800'
+   imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
