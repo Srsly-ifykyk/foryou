@@ -7,6 +7,23 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Camera, Calendar, Heart, MapPin, X, Sparkles } from 'lucide-react';
 
+// Import newly uploaded 16 pictures from assets
+import img1 from '../assets/images/1.jpg';
+import img2 from '../assets/images/2.png';
+import img3 from '../assets/images/3.png';
+import img4 from '../assets/images/4.jpeg';
+import img5 from '../assets/images/5.png';
+import img6 from '../assets/images/6.jpg';
+import img7 from '../assets/images/7.png';
+import img8 from '../assets/images/8.png';
+import img9 from '../assets/images/9.png';
+import img11 from '../assets/images/11.png';
+import img12 from '../assets/images/12.png';
+import img13 from '../assets/images/13.png';
+import img14 from '../assets/images/14.png';
+import img15 from '../assets/images/15.png';
+import img16 from '../assets/images/16.png';
+
 interface GalleryPhoto {
   id: string;
   category: 'travel' | 'cafe' | 'stardust' | 'cozy';
@@ -18,82 +35,140 @@ interface GalleryPhoto {
 }
 
 const PHOTOS: GalleryPhoto[] = [
-  // Sun-kissed Escapes
   {
     id: 'photo-1',
-    imageUrl: '/src/assets/images/1.jpg'
+    category: 'travel',
+    title: 'Our Brightest Smile',
+    date: 'April 14, 2025',
+    location: 'Our Happy Place',
+    description: 'Your smile lights up my whole world. This picture captures exactly how beautiful and radiant you are when we are together.',
+    imageUrl: img1
   },
   {
     id: 'photo-2',
-    imageUrl: '/src/assets/images/2.jpg'
+    category: 'cozy',
+    title: 'Sweet Hand-in-Hand',
+    date: 'May 10, 2025',
+    location: 'Under the Golden Sun',
+    description: 'Holding your hand is my favorite thing to do in this universe. I never want to let go of this warm, secure feeling.',
+    imageUrl: img2
   },
   {
     id: 'photo-3',
-    imageUrl: '/src/assets/images/3.jpg'
+    category: 'cafe',
+    title: 'Lazy Afternoon Coffee',
+    date: 'June 5, 2025',
+    location: 'Quiet Little Corner',
+    description: 'Just sitting across from you, sharing giggles over a cup of tea. Every conversation with you is a memory I treasure forever.',
+    imageUrl: img3
   },
-
-  // Café Conversations
   {
     id: 'photo-4',
-    imageUrl: '/src/assets/images/4.jpg'
+    category: 'stardust',
+    title: 'Gazing at the Stars',
+    date: 'July 19, 2025',
+    location: 'Our Midnight Secret',
+    description: 'Even the brightest stars in the night sky cannot compare to the magical glimmer in your beautiful eyes.',
+    imageUrl: img4
   },
   {
     id: 'photo-5',
-    imageUrl: '/src/assets/images/5.jpg'
+    category: 'cozy',
+    title: 'Warm Hugs & Soft Sweaters',
+    date: 'August 30, 2025',
+    location: 'Our Sunny Balcony',
+    description: 'Wrapped around your warmth, the entire world outside just fades away. You are my safe haven, my sweet home.',
+    imageUrl: img5
   },
-
-  // Stardust Nights
   {
     id: 'photo-6',
-    imageUrl: '/src/assets/images/6.jpg'
+    category: 'travel',
+    title: 'Chasing Sunsets Together',
+    date: 'September 22, 2025',
+    location: 'Golden Horizon',
+    description: 'Watching the sky paint itself in gold and violet. I want to chase every single sunset with you next to me.',
+    imageUrl: img6
   },
   {
     id: 'photo-7',
-    imageUrl: '/src/assets/images/7.jpg'
+    category: 'stardust',
+    title: 'The Sparkle in Your Eyes',
+    date: 'October 15, 2025',
+    location: 'City Lights Overlook',
+    description: 'Looking at you is like looking at a galaxy. Every laugh and soft whisper is a melody written in my heart.',
+    imageUrl: img7
   },
-
-  // Cozy Winter Memories
   {
     id: 'photo-8',
-    imageUrl: '/src/assets/images/8.jpg'
+    category: 'cafe',
+    title: 'Warm Brew & Sweet Smiles',
+    date: 'November 8, 2025',
+    location: 'Vintage Espresso Bar',
+    description: 'The café was freezing, but your presence warmed me up instantly. You make every ordinary day so extraordinary.',
+    imageUrl: img8
   },
   {
     id: 'photo-9',
-    imageUrl: '/src/assets/images/9.jpg'
+    category: 'travel',
+    title: 'Our Beautiful Roadtrip',
+    date: 'December 12, 2025',
+    location: 'Chuncheon Lakeshore',
+    description: 'Music playing low, wind in your hair, and your sweet laughter filling the space between us. Pure bliss.',
+    imageUrl: img9
   },
-  {
-    id: 'photo-10',
-    imageUrl: '/src/assets/images/10.jpg'
-  },
-
-  // Café Conversations
   {
     id: 'photo-11',
-    imageUrl: '/src/assets/images/11.jpg'
+    category: 'cozy',
+    title: 'Soft Winter Mornings',
+    date: 'January 14, 2026',
+    location: 'Snow Covered Lounge',
+    description: 'Nestled deep in blankets, reading books and sharing sweet, warm cocoa. There is nowhere else I would rather be.',
+    imageUrl: img11
   },
   {
     id: 'photo-12',
-    imageUrl: '/src/assets/images/12.jpg'
+    category: 'travel',
+    title: 'Walking Under Spring Blossoms',
+    date: 'February 28, 2026',
+    location: 'Blooming Garden Walk',
+    description: 'As petals flutter in the breeze, they seem to greet you. You look like a painting in this beautiful spring light.',
+    imageUrl: img12
   },
-
-  // Stardust Nights
   {
     id: 'photo-13',
-    imageUrl: '/src/assets/images/13.jpg'
+    category: 'cafe',
+    title: 'Desserts & Giggles',
+    date: 'March 18, 2026',
+    location: 'Le Petit Dessert Lounge',
+    description: 'You insisted on ordering every single strawberry dessert, and ended up with cream on your nose. Absolute cutest sight.',
+    imageUrl: img13
   },
   {
     id: 'photo-14',
-    imageUrl: '/src/assets/images/14.jpg'
+    category: 'stardust',
+    title: 'Our Candlelit Dinner',
+    date: 'April 5, 2026',
+    location: 'Rustic Lantern Garden',
+    description: 'The soft orange glow reflecting off your cheeks. I am so lucky to be the one who gets to make you laugh like this.',
+    imageUrl: img14
   },
-
-  // Cozy Winter Memories
   {
     id: 'photo-15',
-    imageUrl: '/src/assets/images/15.jpg'
+    category: 'cozy',
+    title: 'Wrapped in Love',
+    date: 'April 29, 2026',
+    location: 'Cozy Fireside',
+    description: 'Snugged together while the rain patters softly against the window. Your embrace is the safest place on earth.',
+    imageUrl: img15
   },
   {
     id: 'photo-16',
-   imageUrl: '/src/assets/images/16.jpg'
+    category: 'travel',
+    title: 'Our Endless Journey',
+    date: 'May 15, 2026',
+    location: 'Golden Vista Point',
+    description: 'Our story has so many chapters yet to write, so many miles yet to walk. I love you more day by day, my darling.',
+    imageUrl: img16
   }
 ];
 
